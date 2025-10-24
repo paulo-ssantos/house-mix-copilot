@@ -1,0 +1,26 @@
+{
+  "name": "@house-mix-copilot/backend-main-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@house-mix-copilot/backend-main"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/backend-main-e2e/jest.config.ts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@house-mix-copilot/backend-main:build",
+          "@house-mix-copilot/backend-main:serve"
+        ]
+      }
+    }
+  }
+}
