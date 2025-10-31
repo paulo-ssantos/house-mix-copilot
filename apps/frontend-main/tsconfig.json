@@ -1,5 +1,5 @@
 {
-  "files": [],
+  "files": ["eslint.config.mjs", "../../eslint.config.mjs"],
   "references": [
     {
       "path": "./tsconfig.app.json"

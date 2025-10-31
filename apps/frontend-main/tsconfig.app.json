@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
   },
-  "include": [".nuxt/nuxt.d.ts", "src/**/*"],
+  "include": [".nuxt/nuxt.d.ts", "src/**/*", "../../eslint.config.mjs"],
   "exclude": [
     "out-tsc",
     "dist",
@@ -28,6 +28,7 @@
     "src/**/*.spec.jsx",
     "eslint.config.js",
     "eslint.config.cjs",
-    "eslint.config.mjs"
+    "eslint.config.mjs",
+    "../../eslint.config.mjs"
   ]
 }

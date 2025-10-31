@@ -11,6 +11,9 @@
     },
     {
       "path": "./apps/backend-main"
+    },
+    {
+      "path": "./apps/desktop-main"
     }
   ]
 }
