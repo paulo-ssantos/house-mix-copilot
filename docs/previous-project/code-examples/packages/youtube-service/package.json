@@ -1,0 +1,27 @@
+{
+  "name": "@church-copilot/youtube-service",
+  "version": "1.0.0",
+  "description": "YouTube video download and management service for Church Liturgy Copilot",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "echo 'Linting youtube-service package'",
+    "test": "echo 'Testing youtube-service package'"
+  },
+  "dependencies": {
+    "@church-copilot/shared": "workspace:*",
+    "@distube/ytdl-core": "^4.16.12",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist"
+  ]
+}

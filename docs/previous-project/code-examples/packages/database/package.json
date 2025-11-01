@@ -1,0 +1,28 @@
+{
+  "name": "@church-copilot/database",
+  "version": "1.0.0",
+  "description": "Database layer for Church Liturgy Copilot",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "echo 'Linting database package'",
+    "test": "echo 'Testing database package'"
+  },
+  "dependencies": {
+    "@church-copilot/shared": "workspace:*",
+    "better-sqlite3": "^12.2.0",
+    "drizzle-orm": "^0.44.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "drizzle-kit": "^0.31.4",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
